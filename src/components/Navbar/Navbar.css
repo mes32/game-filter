@@ -1,22 +1,39 @@
-header {
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: #191919;
+    border-bottom: 1px solid black;
+}
+
+.navbar-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0.4rem 60px;
-
-    background-color: #191919;
-    border-bottom: 1px solid ghostwhite;
+    margin: 0.4rem 60px;
 }
 
-h1 {
+.links-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar h1 {
     margin: 0;
     padding: 0;
 
     font-size: 1.4rem;
+    color: #bfbfbf;
 }
 
 .links-div a {
     font-size: 1rem;
-    margin-left: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 30px;
 }

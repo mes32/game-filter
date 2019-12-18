@@ -1,5 +1,12 @@
+main {
+  padding: 0 60px;
+  margin-top: 4rem;
+  overflow: scroll;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
 }
 
 a:link {

@@ -18,8 +18,10 @@ function App() {
         <Navbar />
         <Switch>
           <Redirect exact from="/" to="/search" />
-          <Route exact path="/search" component={SearchPage} />
-          <Route exact path="/cart" component={CartPage} />
+          <main>
+            <Route exact path="/search" component={SearchPage} />
+            <Route exact path="/cart" component={CartPage} />
+          </main>
         </Switch>
       </Router>
     </div>
