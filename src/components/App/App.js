@@ -14,8 +14,8 @@ import SearchPage from '../SearchPage/SearchPage';
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Router>
+        <Navbar />
         <Switch>
           <Redirect exact from="/" to="/search" />
           <Route exact path="/search" component={SearchPage} />
