@@ -13,25 +13,5 @@
 
 .game-card button {
     display: block;
-
-    padding: 0.2rem 15px;
     margin: 1rem 0;
-
-    font-size: 1rem;
-    font-weight: bold;
-
-    border: 1px solid #a3be8c;
-    border-radius: 5px;
-    background-color: #a3be8c;
-    color: white;
-}
-
-.game-card button:hover {
-    cursor: pointer;
-    border: 1px solid #82976f;
-    background-color: #82976f;
-}
-
-.game-card button:focus {
-    outline: none;
 }

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Game from '../../classes/Game';
 
-import './CartEntryRow.css';
-
 function CartEntry(props) {
     const game = props.game;
 
@@ -13,10 +11,10 @@ function CartEntry(props) {
     }
 
     return (
-        <tr className="cart-entry-row">
+        <tr>
             <td>{game.iconImage && <img src={game.iconImage} alt=""></img>}</td>
             <td>{game.name}</td>
-            <td><button onClick={removeEntry}>Remove</button></td>
+            <td><button onClick={removeEntry} className="remove-button">Remove</button></td>
         </tr>
     );
 }

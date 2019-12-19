@@ -6,7 +6,7 @@ const games = (state = DEFAULT_STATE, action) => {
         return [...state, itemToAdd];
     } else if (action.type === 'REMOVE_CART_ITEM') {
         const indexToRemove = action.payload;
-        let nextState = [...state];
+        const nextState = [...state];
         nextState.splice(indexToRemove, 1);
         return nextState;
     } else if (action.type === 'CLEAR_CART_ITEMS') {
