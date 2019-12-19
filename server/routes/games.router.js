@@ -1,19 +1,18 @@
 const axios = require('axios');
 const express = require('express');
 const router = express.Router();
-const GIANT_BOMB_URL = 'https://www.giantbomb.com/api/games/';
+
+const BASE_URL = 'https://www.giantbomb.com/api/games/';
 const API_KEY = process.env.API_KEY;
 
 router.get('/', (req, res) => {
-
     const filter = `name:${req.query.name}`;
     axios({
         method: 'GET',
-        url: GIANT_BOMB_URL,
+        url: `${BASE_URL}?filter=${filter}`,
         params: {
             format: 'json',
             api_key: API_KEY,
-            filter: filter,
             sort: 'name:asc',
             limit: 20
         }
