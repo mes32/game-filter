@@ -5,10 +5,13 @@ Prototype of a game rental web store using the Giant Bomb API. You can grab an A
 - React
 - Redux & Sagas
 - Moment.js
+- Node
+- Express
 
-## Development Requirements
+## Requirements
 - Git
 - NPM (Node Package Manager)
+- Nodemon
 
 ## Setup and Run
 ```bash
@@ -16,15 +19,19 @@ Prototype of a game rental web store using the Giant Bomb API. You can grab an A
 npm install
 
 # 2. Write your API key into a file named .env
-# Note: This way of handling API keys is not a viable solution for a production application
 touch .env 
-echo 'REACT_APP_API_KEY=<your-giant-bomb-api-key>' >> .env
+echo 'API_KEY=<your-giant-bomb-api-key>' >> .env
 
 # 3. Start the client (Runs on localhost:3000)
-npm start
+npm run client
+
+# 4. Start the server (Runs on localhost:5000)
+npm run server
 ```
 
-[localhost:3000](http://localhost:3000)
+**Client:** [localhost:3000](http://localhost:3000)
+
+**Server:** [localhost:5000](http://localhost:5000)
 
 ## Features
 

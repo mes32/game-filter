@@ -13,7 +13,7 @@ function SearchPanel(props) {
 
     const submitSearch = (event) => {
         event.preventDefault();
-        props.dispatch({ type: 'FETCH_GAMES' });
+        props.dispatch({ type: 'SEARCH_GAMES', payload: { name: gameTitle } });
     }
 
     return (

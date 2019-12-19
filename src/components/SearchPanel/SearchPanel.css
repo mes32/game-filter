@@ -1,6 +1,6 @@
 .search-panel {
-    padding: 1.2rem 30px; 
-    max-width: 500px;
+    max-width: 600px;
+    padding: 1.2rem 30px;
     border: 1px solid #bfbfbf;
     border-radius: 2px;
 }
@@ -13,13 +13,13 @@
 }
 
 #search-bar {
-    background-color: black;
-    color: white;
-    border: 3px solid whitesmoke;
-    border-radius: 3px;
+    width: 60%;
     padding: 0.2rem 5px;
     font-size: 1.2rem;
-    width: 30ch;
+    border: 3px solid whitesmoke;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
 }
 
 #search-bar::placeholder {
@@ -32,21 +32,23 @@
 }
 
 input[type="submit"] {
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #a3be8c;
-    border: 1px solid #a3be8c;
-    border-radius: 5px;
     height: 2rem;
     padding: 0.2rem 30px;
-    color: white;
     margin-left: 8px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border: 1px solid #a3be8c;
+    border-radius: 5px;
+    background-color: #a3be8c;
+    color: white;
 }
 
 input[type="submit"]:hover {
     cursor: pointer;
-    background-color: #82976f;
     border: 1px solid #82976f;
+    background-color: #82976f;
 }
 
 input[type="submit"]:focus {
