@@ -1,0 +1,23 @@
+table.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table tr {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.cart-table tr:hover {
+    background-color: #191919;
+}
+
+.cart-table th, .cart-entry-row td {
+    padding: 0.2rem 60px 0.2rem 10px;
+    text-align: left;
+}
+
+.cart-table th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Game from '../../classes/Game';
-
 import './GameCard.css';
 
 function GameCard(props) {
     const game = props.game;
+
+    const addToCart = () => {
+        props.dispatch({ type: 'ADD_CART_ITEM', payload: game });
+    }
 
     return (
         <div className="game-card">
@@ -14,7 +18,7 @@ function GameCard(props) {
             {game.description && <p>{game.description}</p>}
             {game.url && <p>(<a href={game.url}>more</a>)</p>}
             {game.image && <img src={game.image} alt="game artwork" ></img>}
-            <button>Rent a Copy</button>
+            <button onClick={addToCart}>Rent a Copy</button>
         </div>
     );
 }
@@ -23,4 +27,4 @@ GameCard.propTypes = {
     game: PropTypes.instanceOf(Game)
 };
 
-export default GameCard;
+export default connect()(GameCard);
