@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <header className="navbar">
             <div className="navbar-flex">
-                <h1>game-filter:~$ █ </h1>
+                <h1>game-filter:~$ _ </h1>
                 <div className="links-div">
                     <Link to="/search">Search Games</Link>
                     <Link to="/cart">Shopping Cart</Link>

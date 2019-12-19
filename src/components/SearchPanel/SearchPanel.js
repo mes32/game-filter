@@ -20,7 +20,7 @@ function SearchPanel(props) {
         <div className="search-panel">
             <form onSubmit={submitSearch}>
                 <div className="search-bar-div">
-                    <input id="search-bar" type="text" onChange={handleChange} placeholder="Game Title" />
+                    <input id="search-bar" type="text" onChange={handleChange} value={gameTitle} placeholder="Game Title" />
                     <input type="submit" value="Search" />
                 </div>
             </form>
