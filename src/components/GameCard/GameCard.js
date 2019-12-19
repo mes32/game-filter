@@ -11,13 +11,17 @@ function GameCard(props) {
         props.dispatch({ type: 'ADD_CART_ITEM', payload: game });
     }
 
+    const getErrorSrc = (event) => {
+        event.target.style.display = "none";
+    }
+
     return (
         <div className="game-card">
             <h3>{game.name}</h3>
             {game.releaseDate && <h4>Release date: {game.formatReleaseDate()}</h4>}
             {game.description && <p>{game.description}</p>}
             {game.url && <p>(<a href={game.url}>more</a>)</p>}
-            {game.image && <img src={game.image} alt="game artwork" ></img>}
+            {game.image && <img src={game.image} alt="game artwork" onError={getErrorSrc}></img>}
             <button onClick={addToCart}>Rent a Copy</button>
         </div>
     );
