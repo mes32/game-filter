@@ -5,6 +5,7 @@ import {
   Redirect,
   Switch
 } from 'react-router-dom';
+import { connect } from 'react-redux'; 
 import './App.css';
 
 import CartPage from '../CartPage/CartPage';
@@ -15,17 +16,19 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Redirect exact from="/" to="/search" />
         <Navbar />
         <Switch>
-          <Redirect exact from="/" to="/search" />
-          <main>
-            <Route exact path="/search" component={SearchPage} />
-            <Route exact path="/cart" component={CartPage} />
-          </main>
+          <>
+            <main>
+              <Route exact path="/search" component={SearchPage} />
+              <Route exact path="/cart" component={CartPage} />
+            </main>
+          </>
         </Switch>
       </Router>
     </div>
   );
 }
 
-export default App;
+export default connect()(App);

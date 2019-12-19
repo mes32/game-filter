@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import SearchPanel from '../SearchPanel/SearchPanel';
 
@@ -11,4 +12,4 @@ function SearchPage() {
     );
 }
 
-export default SearchPage;
+export default connect()(SearchPage);
