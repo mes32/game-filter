@@ -3,6 +3,7 @@ import { put, takeLatest } from 'redux-saga/effects';
 import Game from '../../classes/Game';
 
 function* searchGames(action) {
+    yield console.log(action.payload);
     const params = {
         name: encodeURI(action.payload.name)
     };

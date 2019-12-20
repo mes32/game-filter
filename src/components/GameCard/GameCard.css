@@ -1,12 +1,12 @@
 .game-card {
     margin-top: 1rem;
     padding: 0.4rem 20px;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: #191919;
 }
 
 .game-card img {
-    /* display: inline-block; */
     max-width: 200px;
     max-height: 200px;
 }

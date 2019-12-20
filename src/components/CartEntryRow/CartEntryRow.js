@@ -20,8 +20,8 @@ function CartEntry(props) {
 }
 
 CartEntry.propTypes = {
-    index: PropTypes.number,
-    game: PropTypes.instanceOf(Game)
+    index: PropTypes.number.isRequired,
+    game: PropTypes.instanceOf(Game).isRequired
 };
 
 export default connect()(CartEntry);

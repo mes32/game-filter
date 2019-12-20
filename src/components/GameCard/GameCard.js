@@ -28,7 +28,7 @@ function GameCard(props) {
 }
 
 GameCard.propTypes = {
-    game: PropTypes.instanceOf(Game)
+    game: PropTypes.instanceOf(Game).isRequired
 };
 
 export default connect()(GameCard);

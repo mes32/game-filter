@@ -1,6 +1,7 @@
 .search-panel {
     max-width: 600px;
     padding: 1.2rem 30px;
+    margin-bottom: 2rem;
     border: 1px solid #bfbfbf;
     border-radius: 2px;
 }
