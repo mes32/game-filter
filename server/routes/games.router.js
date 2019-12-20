@@ -7,6 +7,9 @@ const API_KEY = process.env.API_KEY;
 
 router.get('/', (req, res) => {
     const filter = `name:${req.query.name}`;
+    // NOTE: Searching names that include a period only seems to work
+    // when the filter=name: is included in the url field but not when 
+    // it is under the params field.  
     axios({
         method: 'GET',
         url: `${BASE_URL}?filter=${filter}`,
@@ -14,7 +17,7 @@ router.get('/', (req, res) => {
             format: 'json',
             api_key: API_KEY,
             sort: 'name:asc',
-            limit: 20
+            limit: 100
         }
     }).then((response) => {
         res.send(response.data.results);
