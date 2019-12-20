@@ -1,5 +1,7 @@
 # Game Filter
-Prototype of a game rental web store using the Giant Bomb API. You can grab an API key [here](https://www.giantbomb.com/api/).
+Prototype of a game rental web store using the Giant Bomb API. You can grab an API key [here](https://www.giantbomb.com/api/). Search for games by title. Add and remove games from your shopping cart.
+
+![app screenshot](docs/images/screenshot.png)
 
 ## Technologies Used
 - React
@@ -36,10 +38,24 @@ npm run server
 ## Features
 
 ### Completed Features
+- [x] Search for games using the Giant Bomb API
+- [x] Displays a list of games with an image, a short description, release date, etc.
+- [x] Select games from list to add a copy to shopping cart for rental
+- [x] Remove items from shopping list or 'checkout' removing all items
+- [x] Redux store keeps the two pages synchonized
+- [x] Proxy server and environment variables keep the API key hidden from client-side users
+- [x] Search strings use URL encoding to handle special characters
 
-
-### Planned Features
-
+### Future Features
+- [ ] Unit testing
+- [ ] Controls to configure results per page and to scroll forward/backward thru pages
+- [ ] Filtering options to refine searches based on gaming platforms or user reviews
+- [ ] Using a redux persistence library to allow the user to return to search results after following a 'more' link
+- [ ] User authentication
+- [ ] Database to save users shopping carts between sessions
+- [ ] Limiting API requests from Giant Bomb to only the essential fields. This might produce faster queries.
+- [ ] Interface with a second 3rd-party API to get game rental prices or to allow renting games
+- [ ] Improving the organization of the project's CSS possibly using styled-components or a CSS preprocessor
 
 ## References
 - [https://www.giantbomb.com/api/documentation/](https://www.giantbomb.com/api/documentation/)
